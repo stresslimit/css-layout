@@ -1,0 +1,91 @@
+/*
+requires var(--unit) to be set upstream
+*/
+
+@custom-media --viewport-xs-only screen and (max-width: 767px);
+@custom-media --viewport-md screen and (min-width: 768px);
+@custom-media --viewport-lg screen and (min-width: 1080px);
+
+@media (--viewport-xs-only) {
+}
+@media (--viewport-md) {
+}
+
+.container, .container-md, .container-sm {
+  padding-left: var(--unit);
+  padding-right: var(--unit);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.container-md {
+  max-width: 800px;
+  margin: auto;
+}
+.container-sm {
+  max-width: 600px;
+  margin: auto;
+}
+
+.section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+
+.row-xs {
+  display: flex;
+  align-items: center;
+}
+.row-xs.distribute {
+  justify-content: space-between;
+}
+
+
+
+@media (--viewport-md) {
+
+  .row {
+    display: flex;
+    align-items: center;
+    margin-left:  -var(--unit);
+    margin-right: -var(--unit);
+  }
+  .row.valign-top {
+    align-items: flex-start;
+  }
+  .row.distribute {
+    justify-content: space-between;
+  }
+  .valign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
+    padding-left: var(--unit);
+    padding-right: var(--unit);
+  }
+  .half {
+    width: 50%;
+  }
+  .third {
+    width: 33%;
+  }
+  .two-thirds {
+    width: 66%;
+  }
+  .quarter {
+    width: 25%;
+  }
+  .shrink {
+    flex-grow: 0;
+  }
+  .grow {
+    flex-grow: 1;
+  }
+
+}
