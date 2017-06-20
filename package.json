@@ -1,0 +1,10 @@
+{
+  "name": "css-layout",
+  "version": "1.0.0",
+  "description": "Simplest flexbox-based, human-readable css layout classes. Requires `var(--unit)` to be set upstream in your project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stresslimit/css-layout.git"
+  },
+  "author": "@stresslimit"
+}
