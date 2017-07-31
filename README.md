@@ -22,6 +22,9 @@ Requires `var(--unit)` to be set upstream in your project.
   -----------------------------------------
 ```
 
+`.row` kicks in at 768px wide. For columns on phones, use `.row-xs`
+
+
 ### Helpers
 
 `grow | shrink`
