@@ -3,7 +3,7 @@
 Simplest flexbox-based, human-readable css layout classes.
 Requires `var(--unit)` to be set upstream in your project.
 
-
+```
   container     1000px
   container-md  800px
   container-sm  600px
@@ -20,6 +20,7 @@ Requires `var(--unit)` to be set upstream in your project.
   | quarter | quarter | quarter | quarter |
 
   -----------------------------------------
+```
 
 ### Helpers
 
