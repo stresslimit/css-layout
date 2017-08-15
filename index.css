@@ -44,6 +44,9 @@ requires var(--unit) to be set upstream
 .row-xs.distribute {
   justify-content: space-between;
 }
+.row-xs.valign-top {
+  align-items: flex-start;
+}
 .row-xs .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
   padding-left: var(--unit);
   padding-right: var(--unit);
