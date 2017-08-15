@@ -42,6 +42,22 @@ requires var(--unit) to be set upstream
 .row-xs.distribute {
   justify-content: space-between;
 }
+.row-xs .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
+  padding-left: var(--unit);
+  padding-right: var(--unit);
+}
+.row-xs .half {
+  width: 50%;
+}
+.row-xs .third {
+  width: 33%;
+}
+.row-xs .two-thirds {
+  width: 66%;
+}
+.row-xs .quarter {
+  width: 25%;
+}
 
 
 
@@ -64,6 +80,10 @@ requires var(--unit) to be set upstream
     align-items: center;
     justify-content: center;
   }
+  .order-1 { order: 1; }
+  .order-2 { order: 2; }
+  .order-3 { order: 3; }
+  .order-4 { order: 4; }
 
   .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
     padding-left: var(--unit);
