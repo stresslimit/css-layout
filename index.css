@@ -47,7 +47,12 @@ requires var(--unit) to be set upstream
 .row-xs.valign-top {
   align-items: flex-start;
 }
-.row-xs .half, .row-xs .third, .row-xs .two-thirds, .row-xs .quarter, .row-xs .full {
+.row-xs .half,
+.row-xs .third,
+.row-xs .two-thirds,
+.row-xs .quarter,
+.row-xs .three-quarters,
+.row-xs .full {
   padding-left: var(--unit);
   padding-right: var(--unit);
 }
@@ -55,13 +60,16 @@ requires var(--unit) to be set upstream
   width: 50%;
 }
 .row-xs .third {
-  width: 33%;
+  width: 33.33%;
 }
 .row-xs .two-thirds {
-  width: 66%;
+  width: 66.66%;
 }
 .row-xs .quarter {
   width: 25%;
+}
+.row-xs .three-quarters {
+  width: 75%;
 }
 .row-xs .full {
   width: 100%;
@@ -93,7 +101,7 @@ requires var(--unit) to be set upstream
   .order-3 { order: 3; }
   .order-4 { order: 4; }
 
-  .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
+  .half, .third, .two-thirds, .quarter, .three-quarters, .full, .shrink, .grow {
     padding-left: var(--unit);
     padding-right: var(--unit);
   }
@@ -101,13 +109,16 @@ requires var(--unit) to be set upstream
     width: 50%;
   }
   .third {
-    width: 33%;
+    width: 33.33%;
   }
   .two-thirds {
-    width: 66%;
+    width: 66.66%;
   }
   .quarter {
     width: 25%;
+  }
+  .three-quarters {
+    width: 75%;
   }
   .full {
     width: 100%;
