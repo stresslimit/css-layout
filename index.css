@@ -47,7 +47,7 @@ requires var(--unit) to be set upstream
 .row-xs.valign-top {
   align-items: flex-start;
 }
-.row-xs .half, .third, .two-thirds, .quarter, .full, .shrink, .grow {
+.row-xs .half, .row-xs .third, .row-xs .two-thirds, .row-xs .quarter, .row-xs .full {
   padding-left: var(--unit);
   padding-right: var(--unit);
 }
@@ -62,6 +62,9 @@ requires var(--unit) to be set upstream
 }
 .row-xs .quarter {
   width: 25%;
+}
+.row-xs .full {
+  width: 100%;
 }
 
 
@@ -105,6 +108,9 @@ requires var(--unit) to be set upstream
   }
   .quarter {
     width: 25%;
+  }
+  .full {
+    width: 100%;
   }
   .shrink {
     flex-grow: 0;
