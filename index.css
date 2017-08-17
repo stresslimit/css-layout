@@ -53,6 +53,7 @@ requires var(--unit) to be set upstream
 .row-xs .quarter,
 .row-xs .three-quarters,
 .row-xs .full {
+  box-sizing: border-box;
   padding-left: var(--unit);
   padding-right: var(--unit);
 }
@@ -102,6 +103,7 @@ requires var(--unit) to be set upstream
   .order-4 { order: 4; }
 
   .half, .third, .two-thirds, .quarter, .three-quarters, .full, .shrink, .grow {
+    box-sizing: border-box;
     padding-left: var(--unit);
     padding-right: var(--unit);
   }
