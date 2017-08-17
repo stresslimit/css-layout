@@ -34,12 +34,12 @@ requires var(--unit) to be set upstream
   padding-bottom: 4em;
 }
 
-
 .row-xs {
   display: flex;
   align-items: center;
   margin-left:  -var(--unit);
   margin-right: -var(--unit);
+  flex-wrap: wrap;
 }
 .row-xs.distribute {
   justify-content: space-between;
@@ -85,6 +85,7 @@ requires var(--unit) to be set upstream
     align-items: center;
     margin-left:  -var(--unit);
     margin-right: -var(--unit);
+    flex-wrap: wrap;
   }
   .row.valign-top {
     align-items: flex-start;

@@ -1,6 +1,6 @@
 {
   "name": "css-layout",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simplest flexbox-based, human-readable css layout classes. Requires `var(--unit)` to be set upstream in your project.",
   "repository": {
     "type": "git",
