@@ -1,5 +1,9 @@
 /*
-requires var(--unit) to be set upstream
+Requires the following in parent project:
+  postcss-custom-properties
+  postcss-custom-media
+  postcss-calc
+Also var(--unit) must be set upstream
 */
 
 @custom-media --viewport-xs-only screen and (max-width: 767px);
@@ -11,6 +15,8 @@ requires var(--unit) to be set upstream
 @media (--viewport-md) {
 }
 
+/* Containers
+*/
 .container, .container-md, .container-sm {
   padding-left: var(--unit);
   padding-right: var(--unit);
@@ -29,11 +35,48 @@ requires var(--unit) to be set upstream
   margin: auto;
 }
 
-.section {
-  padding-top: 4em;
-  padding-bottom: 4em;
+
+/* Sections with top/bottom spacing
+*/
+.section-lg, .vspace-lg {
+  padding-top: calc(var(--unit) *4);
+  padding-bottom: calc(var(--unit) *4);
+}
+.section-md, .vspace-md {
+  padding-top: calc(var(--unit) *2);
+  padding-bottom: calc(var(--unit) *2);
+}
+.section-sm, .vspace-sm {
+  padding-top: var(--unit);
+  padding-bottom: var(--unit);
 }
 
+.vspace-bottom-lg {
+  padding-bottom: calc(var(--unit) *4);
+}
+.vspace-bottom-md {
+  padding-bottom: calc(var(--unit) *2);
+}
+.vspace-bottom-sm {
+  padding-bottom: var(--unit);
+}
+
+.hspace-lg {
+  padding-left: calc(var(--unit) *4);
+  padding-right: calc(var(--unit) *4);
+}
+.hspace-md {
+  padding-left: calc(var(--unit) *2);
+  padding-right: calc(var(--unit) *2);
+}
+.hspace-sm {
+  padding-left: var(--unit);
+  padding-right: var(--unit);
+}
+
+
+/* Columns layout
+*/
 .row-xs {
   display: flex;
   align-items: center;
@@ -52,7 +95,10 @@ requires var(--unit) to be set upstream
 .row-xs .two-thirds,
 .row-xs .quarter,
 .row-xs .three-quarters,
-.row-xs .full {
+.row-xs .full,
+.row-xs .shrink,
+.row-xs .grow
+{
   box-sizing: border-box;
   padding-left: var(--unit);
   padding-right: var(--unit);
