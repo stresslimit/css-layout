@@ -42,7 +42,7 @@ Also var(--unit) must be set upstream
   padding-top: calc(var(--unit) *4);
   padding-bottom: calc(var(--unit) *4);
 }
-.section-md, .vspace-md {
+.section, .section-md, .vspace-md {
   padding-top: calc(var(--unit) *2);
   padding-bottom: calc(var(--unit) *2);
 }
@@ -77,6 +77,13 @@ Also var(--unit) must be set upstream
 
 /* Columns layout
 */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-end {
+  justify-content: flex-end;
+}
 .row-xs {
   display: flex;
   align-items: center;
@@ -121,6 +128,25 @@ Also var(--unit) must be set upstream
 .row-xs .full {
   width: 100%;
 }
+.row-xs .shrink,
+.row-xs .grow,
+.row-xs .narrow,
+.row-xs .wide
+{
+  box-sizing: border-box;
+  padding-left: var(--unit);
+  padding-right: var(--unit);
+}
+.row-xs .shrink {
+  flex-shrink: 1;
+}
+.row-xs .grow {
+  flex-grow: 1;
+}
+.row-xs .order-1 { order: 1; }
+.row-xs .order-2 { order: 2; }
+.row-xs .order-3 { order: 3; }
+.row-xs .order-4 { order: 4; }
 
 
 
@@ -135,6 +161,9 @@ Also var(--unit) must be set upstream
   }
   .row.valign-top {
     align-items: flex-start;
+  }
+  .row-flex.valign-center {
+    align-items: center;
   }
   .row.distribute {
     justify-content: space-between;
