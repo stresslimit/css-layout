@@ -87,8 +87,8 @@ Also var(--unit) must be set upstream
 .row-xs {
   display: flex;
   align-items: center;
-  margin-left:  -var(--unit);
-  margin-right: -var(--unit);
+  margin-left:  calc(-1 * var(--unit));
+  margin-right: calc(-1 * var(--unit));
   flex-wrap: wrap;
 }
 .row-xs.distribute {
@@ -155,8 +155,8 @@ Also var(--unit) must be set upstream
   .row {
     display: flex;
     align-items: center;
-    margin-left:  -var(--unit);
-    margin-right: -var(--unit);
+    margin-left:  calc(-1 * var(--unit));
+    margin-right: calc(-1 * var(--unit));
     flex-wrap: wrap;
   }
   .row.valign-top {
