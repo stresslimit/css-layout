@@ -178,7 +178,7 @@ Also var(--unit) must be set upstream
   .order-3 { order: 3; }
   .order-4 { order: 4; }
 
-  .half, .third, .two-thirds, .quarter, .three-quarters, .full, .shrink, .grow {
+  .half, .third, .two-thirds, .quarter, .three-quarters, .fifth, .full, .shrink, .grow {
     box-sizing: border-box;
     padding-left: var(--unit);
     padding-right: var(--unit);
@@ -194,6 +194,9 @@ Also var(--unit) must be set upstream
   }
   .quarter {
     width: 25%;
+  }
+  .fifth {
+    width: 20%;
   }
   .three-quarters {
     width: 75%;
